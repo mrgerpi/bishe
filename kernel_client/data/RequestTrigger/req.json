@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"1":{"str":"test_service&v1&9838&TSocket&TBinaryProtocol"},"2":{"str":"TestInterface"}}
+=======
+{"1":{"str":"hotspot_api&v1&9999&TSocket&TBinaryProtocol"},"2":{"str":"GetRecommendStationList"}}
+>>>>>>> 592b5ecec0f6379a6b24bb7739e919bb54686fd1

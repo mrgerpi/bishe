@@ -1,0 +1,20 @@
+[35m[1m______
+| ___ \
+| |_/ /  ___   ___
+| ___ \ / _ \ / _ \
+| |_/ /|  __/|  __/
+\____/  \___| \___| v1.10.0
+[21m[0m2019/04/18 19:23:13 [34m[1mINFO    [21m[0m ▶ 0001 Using 'cgi' as 'appname'
+2019/04/18 19:23:13 [34m[1mINFO    [21m[0m ▶ 0002 Initializing watcher...
+2019/04/18 19:23:15 [32m[1mSUCCESS [21m[0m ▶ 0003 Built Successfully!
+2019/04/18 19:23:15 [34m[1mINFO    [21m[0m ▶ 0004 Restarting 'cgi'...
+2019/04/18 19:23:15 [32m[1mSUCCESS [21m[0m ▶ 0005 './cgi' is running...
+{"filename":"log/test.log"}
+2019/04/18 19:23:15.171 [1;44m[D]  database_init||url=root:123456@tcp(127.0.0.1:3306)/thriftMock?charset=utf8[0m
+2019/04/18 19:23:15.176 [1;34m[I] [asm_amd64.s:1333]  http server Running on http://:8080[0m
+2019/04/18 19:23:49.200 [1;44m[D]  UserController||methond=Post||req={"email":"451733087@qq.com","password":"2314"}[0m
+2019/04/18 19:23:49.200 [1;44m[D]  email=451733087@qq.com, passwrod=2314, json={"email":"451733087@qq.com","password":"2314"}[0m
+2019/04/18 19:23:49.200 [1;44m[D]  Sizeof(User{})= 40[0m
+[ORM]2019/04/18 19:23:49  -[Queries/default] - [  OK /    db.Query /     0.7ms] - [Select userId, userName, password from User where userName = ?] - `451733087@qq.com`
+2019/04/18 19:23:49.201 [1;44m[D]  GetUserInfo||query result={Id:0 Name: Password:test}[0m
+2019/04/18 19:23:49.201 [1;44m[D]  UserController||methond=Post||user not exists[0m

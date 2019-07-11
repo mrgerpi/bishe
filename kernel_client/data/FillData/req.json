@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+{"1":{"i32":0},"2":{"str":"test_service&v1&9838&TSocket&TBinaryProtocol"},"3":{"str":"TestInterface#0"},"4":{"str":"{\"1\":{\"i32\":128},\"2\":{\"i32\":256},\"3\":{\"i32\":0}}"}}
+=======
+{"1":{"i32":1},"2":{"str":"hotspot_api&v1&9999&TSocket&TBinaryProtocol"},"3":{"str":"GetRecommendStationList"},"4":{"str":"{\"1\":{\"i32\":0},\"2\":{\"str\":\"ok\"}}"}}
+>>>>>>> 592b5ecec0f6379a6b24bb7739e919bb54686fd1

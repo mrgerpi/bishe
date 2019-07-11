@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 592b5ecec0f6379a6b24bb7739e919bb54686fd1
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>春铃</title>
+		<link rel="icon" href="img/head.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="img/head.ico" type="image/x-icon">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="css/signin.css" rel="stylesheet">
+		<script src="js/vue.js"></script>
+		<script src="js/axios.min.js"></script>
+	</head>
+	<body>
+		<div class="container" id = "submitData">
+			<form class="form-signin">
+				<h2 class="form-signin-heading">春铃</h2>
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<input type="email" id="inputEmail" class="form-control" 
+					placeholder="Email address" v-model="email" required autofocus>
+				<label for="inputPassword" class="sr-only">Password</label>
+				<input type="password" id="inputPassword" class="form-control" 
+					placeholder="Password" v-model="password" required>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" value="remember-me" v-model = "checked"> Remember me
+					</label>
+				</div>
+				<button class="btn btn-lg btn-primary btn-block" 
+					type="submit" v-on:click="login">Sign in</button>
+			</form>
+		</div> <!-- /container -->
+		<script>
+			var vm = new Vue({
+				el: "#submitData",
+				data: {
+					email: "",
+					password: "",
+					checked: false
+				},
+				methods: {
+					"login": function () {
+						var baseurl = "http://120.79.247.113:8080";
+						axios.post(baseurl + "/user", {
+								email: this.email,
+								password: this.password
+						})
+						.then(function(response) {
+<<<<<<< HEAD
+=======
+							alert(JSON.stringify(response));
+>>>>>>> 592b5ecec0f6379a6b24bb7739e919bb54686fd1
+							if (response.status == 200) {
+								if (response.data != "ok") {
+									alert("error: " + response.data);
+								} else {
+									alert("login succ");
+								}
+							} else {
+<<<<<<< HEAD
+								alert("please request again||status=" + response.status);
+=======
+								alert("please request again");
+>>>>>>> 592b5ecec0f6379a6b24bb7739e919bb54686fd1
+							}
+							window.location.href = "http://120.79.247.113:8080/static/first.html";
+						})
+						.catch(function(error) {
+							alert("error: " + error)
+						})
+					}
+				},
+			})
+		</script>
+	</body>
+</html>
